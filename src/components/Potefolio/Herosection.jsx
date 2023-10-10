@@ -17,7 +17,7 @@ const HeroSection = () => {
             </span>
           </p>
           <div className="social-links">
-            <Link to="https://twitter.com/shahzaibsheen" className="twitter">
+            <Link to="https://twitter.com/@shahzaibsheen" className="twitter">
               <i className="bx bxl-twitter"></i>
             </Link>
             <Link
