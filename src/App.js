@@ -1,25 +1,37 @@
-import React from 'react'
-import Header from './components/Potefolio/Header'
-import HeroSection from './components/Potefolio/Herosection'
-import About from './components/Potefolio/About'
-import Skills from './components/Potefolio/Skills'
-import Resume from './components/Potefolio/Resume'
-import Portfolio from './components/Potefolio/Portfolio'
-import Services from './components/Potefolio/Services'
-import Testimonials from './components/Potefolio/Testimoniols'
+import "./css/style.css"
+import About from './Components/About';
+import Header from './Components/Header';
+import Navbar from './Components/Navbar';
+import Resume from "./Components/Resume";
+import Services from "./Components/Services";
+import Section from "./Components/Section";
+import Portfolio from "./Components/Portfolio";
+import News from "./Components/News";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+import { Route, Routes } from "react-router-dom";
 
-
-export default function App() {
+function App() {
   return (
     <>
-   <Header/>
-   <HeroSection/>
-   <About/>
-   <Skills/>
-   <Resume/>
-   <Portfolio/>
-   <Services/>
-   <Testimonials/>
+    <Navbar/>
+    <Header/>
+    <About/>
+    <Resume/>
+    <Services/>
+    <Section/>
+    <Portfolio/>
+    <News/>
+    <Contact/>
+    <Footer/>
+
+    {/* <Routes>
+      <Route path="/" element= {<Navbar/>}/>
+    </Routes> */}
+
     </>
-  )
+  
+  );
 }
+
+export default App;
